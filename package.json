@@ -7,11 +7,11 @@
   "author": "admin",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3"
   },
   "type": "module",
   "scripts": {
     "serve": "npx nodemon index.js"
   }
 }
-
