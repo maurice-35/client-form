@@ -1,0 +1,17 @@
+{
+  "name": "test-finer-v",
+  "version": "1.0.0",
+  "description": "node-express-react",
+  "main": "index.js",
+  "repository": "git@github.com:maurice-35/test-finer-v.git",
+  "author": "admin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "type": "module",
+  "scripts": {
+    "serve": "npx nodemon index.js"
+  }
+}
+
