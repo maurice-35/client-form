@@ -12,7 +12,7 @@
   },
   "type": "module",
   "scripts": {
-    "serve": "npx nodemon index.js",
-    "seed": "node db/seeds.js"
+    "serve": "npx nodemon Backend/index.js",
+    "seed": "node Backend/db/seeds.js"
   }
 }

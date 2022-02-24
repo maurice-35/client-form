@@ -11,6 +11,7 @@ export const getAllUsers = async (_req, res) => {
 export const addUser = async (req, res) => {
 	try {
 		// console.log('REQ.BODY', req.body)
+		console.log( new Date(req.body.dateOfBirth))
 		const userToAdd = await User.create(req.body)
 		return res.status(201).json(userToAdd)
 	} catch (err) {
