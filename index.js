@@ -7,7 +7,7 @@ const app = express();
 const port = 5000
 const dbURI = 'mongodb://localhost/test-finer-v'  // name of data base or path.
 
-app.use(express.json())
+app.use(express.json())  // converts request to json format
 
 // define the models
 const User = mongoose.model('User', + userSchema)
@@ -28,11 +28,12 @@ app.get('/users', async (_req, res) => {
 // Create Route
 app.post('/users', async(req, res) => {
 	try {
-		console.log('REQ.BODY', req.body)
+		// console.log('REQ.BODY', req.body)
 		const userToAdd = await User.create(req.body)
-		console.log('User To Add', userToAdd)
+		return res.status(201).json(userToAdd)
 	} catch (err) {
 		console.log(err)
+		return res.status(422).json(err)
 	}
 })
 
