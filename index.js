@@ -9,6 +9,7 @@ const dbURI = 'mongodb://localhost/test-finer-v'  // name of data base or path.
 
 const startServer = async () => {
   try {
+		await
 		mongoose.connect('mongodb://localhost/test-finer-v');
     console.log('🚨 Database has connected successfully')
 		app.listen(port, () =>
