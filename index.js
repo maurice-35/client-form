@@ -37,6 +37,20 @@ app.post('/users', async(req, res) => {
 	}
 })
 
+// User Route
+app.get('/users/:id', async(req, res) => {
+	try {
+		// console.log('REQ.BODY', req.body)
+		const { id } = req.params
+		const singleUser = await User.findById(id)
+		console.log('Single User', singleUser)
+		return res.status(200).json(singleUser)
+	} catch (err) {
+		console.log(err)
+		return res.status(422).json(err)
+	}
+})
+
 
 const startServer = async () => {
   try {
