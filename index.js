@@ -25,7 +25,8 @@ const startServer = async () => {
 
 // middleware for router
 	app.use(router)
-		
+	
+	// establish server connection
 	app.listen(port, () =>
     console.log(`🚀 Express is up and running on port ${port}`))
 
