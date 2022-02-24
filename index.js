@@ -43,11 +43,11 @@ app.get('/users/:id', async(req, res) => {
 		// console.log('REQ.BODY', req.body)
 		const { id } = req.params
 		const singleUser = await User.findById(id)
-		console.log('Single User', singleUser)
+		if (!singleUser) throw new Error()
 		return res.status(200).json(singleUser)
 	} catch (err) {
 		console.log(err)
-		return res.status(422).json(err)
+		return res.status(404).json({ 'message': 'Not found' })
 	}
 })
 
