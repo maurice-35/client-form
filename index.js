@@ -1,6 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import userSchema from './models/user.js'
+import User from './models/user.js'
 
 
 const app = express();
@@ -8,9 +8,6 @@ const port = 5000
 const dbURI = 'mongodb://localhost/test-finer-v'  // name of data base or path.
 
 app.use(express.json())  // converts request to json format
-
-// define the models
-const User = mongoose.model('User', + userSchema)
 
 // log request
 app.use((req, _res, next) => {

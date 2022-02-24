@@ -13,12 +13,5 @@ const userSchema = new mongoose.Schema({
   
 })
 
-userSchema.set('toJSON', {
-  virtuals: true,
-  transform(_doc, json) {
-    return json
-  }
-})
-
 
 export default mongoose.model('User', userSchema)
