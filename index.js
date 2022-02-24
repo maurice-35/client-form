@@ -2,59 +2,32 @@ import express from 'express'
 import mongoose from 'mongoose'
 import User from './models/user.js'
 import { dbURI, port } from './config/environment.js'
+import router from './config/router.js'
 
 
 const app = express();
 
-app.use(express.json())  // converts request to json format
 
-// log request
-app.use((req, _res, next) => {
+const startServer = async () => {
+  try {
+		// connect to db
+		await
+		mongoose.connect('mongodb://localhost/test-finer-v');
+    console.log('🚨 Database has connected successfully')
+		
+		// log request method and url.
+		app.use((req, _res, next) => {
 	console.log(`🏮 Incoming request: METHOD: ${req.method}, URL: ${req.url}`)
 	next()
 })
 
-// Index Route
-app.get('/users', async (_req, res) => {
-	const users = await User.find()
-	console.log('USERS', users)
-	return res.status(200).json(users)
-})
+	app.use(express.json())  // converts request to json format
 
-// Create Route
-app.post('/users', async(req, res) => {
-	try {
-		// console.log('REQ.BODY', req.body)
-		const userToAdd = await User.create(req.body)
-		return res.status(201).json(userToAdd)
-	} catch (err) {
-		console.log(err)
-		return res.status(422).json(err)
-	}
-})
-
-// User Route
-app.get('/users/:id', async(req, res) => {
-	try {
-		// console.log('REQ.BODY', req.body)
-		const { id } = req.params
-		const singleUser = await User.findById(id)
-		if (!singleUser) throw new Error()
-		return res.status(200).json(singleUser)
-	} catch (err) {
-		console.log(err)
-		return res.status(404).json({ 'message': 'Not found' })
-	}
-})
-
-
-const startServer = async () => {
-  try {
-		await
-		mongoose.connect('mongodb://localhost/test-finer-v');
-    console.log('🚨 Database has connected successfully')
-		app.listen(port, () =>
-      console.log(`🚀 Express is up and running on port ${port}`))
+// middleware for router
+	app.use(router)
+		
+	app.listen(port, () =>
+    console.log(`🚀 Express is up and running on port ${port}`))
 
   } catch (err) {
     console.log(err);
