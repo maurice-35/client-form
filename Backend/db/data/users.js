@@ -42,6 +42,15 @@ export default [
     telephone: 15112171123,
     gender: 'male',
     dateOfBirth: '05-02-1992',
-    comment: 'Good to know',
+    comment: 'Good to know'
+  },
+  {
+    firstName: 'joe',
+    surname: 'peters',
+    email: 'joe@email.com',
+    telephone: 32112171342,
+    gender: 'male',
+    dateOfBirth: '03-10-1990',
+    comment: 'Pretty cool'
   }
 ]
