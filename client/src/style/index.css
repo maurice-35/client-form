@@ -77,20 +77,3 @@ button.btn.btn-info {
 	background-color: hsl(45deg 100% 51%);
 }
 
-/* .btn.btn-primary {
-	width: 30rem;
-	background-color: yellow;
-} */
-
-div.popover {
-	width: 25rem;
-	padding: 32px;
-}
-.body {
-	width: 25rem;
-}
-
-div#popover-contained.fade.show.popover.bs-poover-buttton {
-	height: 120px;
-	width: 100px;
-}
