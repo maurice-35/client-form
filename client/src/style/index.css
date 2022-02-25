@@ -1,0 +1,46 @@
+
+.container {
+	height: 80vh;
+	width: 100wv;
+	background-color: rgba(170, 193, 250, 0.467);
+	margin-top: 5rem;
+	padding-top: 5rem;
+}
+
+div.details {
+	background-color: #fff;
+	margin: 3rem auto;
+	height: 40vh;
+}
+input#fname.input.input-fname {
+	width: 12em;
+	padding: 3px;
+	border: 2px solid;
+	border-color: lightgray;
+	border-radius: 10px;
+}
+input#sname.input.input-sname {
+	width: 12em;
+	padding: 3px;
+	border: 2px solid;
+	border-color: lightgray;
+	border-radius: 10px;
+}
+input#email.input {
+	width: 12em;
+	padding: 3px;
+	border: 2px solid;
+	border-color: lightgray;
+	border-radius: 10px;
+}
+.names {
+	display: flex;
+	flex-direction: row;
+	margin: 1rem;
+}
+.email {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	
+}

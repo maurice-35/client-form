@@ -4,6 +4,8 @@ import axios from 'axios'
 
 const App = () => {
   const [user, setUser] = useState([])
+  // const [modalShow, setModalShow] = React.useState(false);
+
 
   useEffect(() => {
     console.log('USE')
@@ -14,16 +16,34 @@ const App = () => {
         setUser(data)
         console.log('DATA', data)
       } catch (err) {
-    console.log(err)
+        console.log(err)
       }
     }
     getData()
   }, [])
 
+
   return (
-    <div> 
-    <h1>Hello World</h1>
-    </div>
+    <section>
+      <div className="container"><br />
+        <div className="details">
+          <div class="names">
+            <div>
+              <label class="label label-fname" for="fname">First Name</label><br />
+              <input class="input input-fname" type="text" id="fname" name="fname" />
+            </div>
+            <div>
+              <label class="label label-sname" for="sname">Surname</label><br />
+              <input class="input input-sname" type="text" id="sname" name="sname" />
+            </div>
+          </div>
+          <div class="email">
+            <label class="label" for="email">Email Address:</label><br />
+            <input class="input" type="text" id="email" name="email" />
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
