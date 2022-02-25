@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-// import { Popover, Button, Overlay } from 'react-bootstrap'
+
 
 
 const App = () => {
   const [user, setUser] = useState([])
-  // const [modalShow, setModalShow] = React.useState(false);
-  // const [show, setShow] = useState(false);
-  // const [target, setTarget] = useState(null);
-  // const ref = useRef(null);
+
 
 
   useEffect(() => {
@@ -25,11 +22,6 @@ const App = () => {
     }
     getData()
   }, [])
-
-  // const handleClick = (event) => {
-  //   setShow(!show);
-  //   setTarget(event.target);
-  // };
 
 
   return (
@@ -68,60 +60,6 @@ const App = () => {
     </section>
   )
 
-
-  // const MyVerticallyCenteredModal = (props) => {
-  //   return (
-  //     <Modal
-  //       {...props}
-  //       size="md" width="1"
-  //       aria-labelledby="contained-modal-title-vcenter"
-  //       centered
-  //     >
-  //       <Modal.Header closeButton>
-  //         <Modal.Title id="contained-modal-title-vcenter">
-  //           Modal heading
-  //         </Modal.Title>
-  //       </Modal.Header>
-  //       <Modal.Body>
-  //         <h4>Centered Modal</h4>
-  //         <p>
-  //           Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-  //           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-  //           consectetur ac, vestibulum at eros.
-  //         </p>
-  //       </Modal.Body>
-  //       <Modal.Footer>
-  //         <Button onClick={props.onHide}>Close</Button>
-  //       </Modal.Footer>
-  //     </Modal>
-  //   );
-  // }
-
-
-  // return (
-  //   <>
-  //     <div>
-  //       <Button variant="primary" onClick={() => setModalShow(true)}>
-  //         Launch vertically centered modal
-  //       </Button>
-
-  //       <MyVerticallyCenteredModal
-  //         show={modalShow}
-  //         onHide={() => setModalShow(false)}
-  //       />
-  //     </div><br />
-  //     <div>
-  //       <Button variant="primary" onClick={() => setModalShow(true)}>
-  //         Launch vertically centered modal
-  //       </Button>
-
-  //       <MyVerticallyCenteredModal
-  //         show={modalShow}
-  //         onHide={() => setModalShow(false)}
-  //       />
-  //     </div>
-  //   </>
-  // )
 }
 
 export default App
