@@ -26,34 +26,92 @@ const App = () => {
 
   return (
     <section>
-      <div className="container"><br />
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Step 1: Your details</button>
-        <div id="demo" class="collapse">
-          <div className="details">
-            <div class="names">
-              <div className="fname">
-                <label class="label label-fname" for="fname">First Name</label>
-                <input class="input input-fname" type="text" id="fname" name="fname" />
+      <div className="panel-group" id="accordion">
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h4 className="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Step 1: Your details</a>
+            </h4>
+          </div>
+          <div id="collapse1" className="panel-collapse collapse in">
+            <div class="panel-body"><div className="details">
+              <div className="names">
+                <div className="fname">
+                  <label className="label label-fname" for="fname">First Name</label>
+                  <input className="input input-fname" type="text" id="fname" name="fname" />
+                </div>
+                <div>
+                  <label className="label label-sname" for="sname">Surname</label>
+                  <input className="input input-sname" type="text" id="sname" name="sname" />
+                </div>
               </div>
-              <div>
-                <label class="label label-sname" for="sname">Surname</label>
-                <input class="input input-sname" type="text" id="sname" name="sname" />
+              <div class="email">
+                <label className="label" for="email">Email Address:</label>
+                <input className="input" type="text" id="email" name="email" />
+              </div>
+              <div className="next">
+                <label className="label label-next" for="next">Next {'>'} </label>
               </div>
             </div>
-            <div class="email">
-              <label class="label" for="email">Email Address:</label>
-              <input class="input" type="text" id="email" name="email" />
-            </div>
-            <div className="next">
-              <label class="label label-next" for="next">Next {'>'} </label>
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Step 2: More details</button>
-        <div id="demo" class="collapse">
-          <div className="fname">
-            <label class="label label-fname" for="fname">First Name</label>
-            <input class="input input-fname" type="text" id="fname" name="fname" />
+      </div>
+      <div className="panel panel-default">
+        <div className="panel-heading">
+          <h4 className="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+              Step 2: More comments </a>
+          </h4>
+        </div>
+        <div id="collapse2" className="panel-collapse collapse">
+          <div className="panel-body"><div className="details">
+            <div className="names">
+              <div className="fname">
+                <label className="label label-fname" for="fname">Telephone Number</label>
+                <input className="input input-fname" type="text" id="fname" name="fname" />
+              </div>
+              <div>
+                <label className="label label-sname" for="sname">Gender</label>
+                <input className="input input-sname" type="text" id="sname" name="sname" />
+              </div>
+            </div>
+            <div className="date">
+              <label className="label" for="dof">Date of Birth</label>
+              <div className="date">
+                <input className="input" type="text" id="date" name="dof" />
+                <input className="input" type="text" id="date" name="dof" />
+                <input className="input" type="text" id="date" name="dof" />
+              </div>
+            </div>
+            <div className="next">
+              <label className="label label-next" for="next">Next {'>'} </label>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div className="panel panel-default">
+        <div className="panel-heading">
+          <h4 className="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+              Step 3: Final comments</a>
+          </h4>
+        </div>
+        <div id="collapse3" className="panel-collapse collapse">
+          <div className="panel-body"><div className="details">
+            <div className="comments">
+              <div className="fcomment">
+                <label className="comment" for="comment">Comments</label>
+                <input className="comment-comment" type="textarea" id="fcomment" name="fcomment" />
+              </div>
+              <div className="next">
+                <label className="label label-next" for="next">Next {'>'} </label>
+              </div>
+
+            </div>
+          </div>
           </div>
         </div>
       </div>

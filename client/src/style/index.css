@@ -12,6 +12,7 @@ div.details {
 	height: 40vh;
 }
 input#fname.input.input-fname {
+	display: flex;
 	width: 12em;
 	padding: 3px;
 	border: 2px solid;
@@ -25,6 +26,17 @@ input#sname.input.input-sname {
 	border-color: lightgray;
 	border-radius: 10px;
 }
+
+input#fcomment.comment-comment {
+	display: flex;
+	width: 35em;
+	height: 20rem;
+	padding: 3px;
+	border: 2px solid;
+	border-color: lightgray;
+	border-radius: 10px;
+}
+
 .label.label.label-fname {
 	color: black;
 }
@@ -58,6 +70,15 @@ input#email.input {
 	border-color: lightgray;
 	border-radius: 10px;
 }
+
+input#date.input {
+	width: 3em;
+	height: 2.5em;
+	padding: 3px;
+	border: 2px solid;
+	border-color: lightgray;
+	border-radius: 10px;
+}
 .names {
 	display: flex;
 	flex-direction: row;
@@ -70,7 +91,7 @@ input#email.input {
 	
 }
 
-button.btn.btn-info {
+div.panel-heading {
 	display: flex;
 	align-items: center;
 	width: 100%;
