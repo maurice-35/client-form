@@ -33,7 +33,6 @@ div.content {
 }
 
 form.column {
-	
 	margin-top: 20%;
 	margin-bottom: 30%;
 }
@@ -50,6 +49,7 @@ div.panel-heading {
 
 div.panel-body {
 	background-color: #e9ecef;
+	/* margin: -1rem; */
 	padding: 0px;
 }
 
@@ -68,6 +68,7 @@ input#fname.input.input-fname {
 	height: 3.5rem;
 	margin-top: -0.75rem;
 	margin-bottom: 2rem;
+	margin-left: 0.75rem;
 }
 input#sname.input.input-sname {
 	width: 15rem;
@@ -80,13 +81,14 @@ input#sname.input.input-sname {
 
 input#telephone.input.input-tel {
 	display: flex;
-	width: 60%;
+	width: 15rem;
 	border: 2px solid;
 	border-color: #e9ecef;
 	border-radius: 10px;
 	height: 3.5rem;
 	margin-top: -0.75rem;
 	margin-bottom: 2rem;
+	margin-left: 0.75rem;
 }
 
 input#fcomment.comment-comment {
@@ -99,6 +101,16 @@ input#fcomment.comment-comment {
 	margin-top: -1rem;
 	margin-left: 0.75rem;
 }
+input#date.input {
+	width: 4rem;
+	height: 2em;
+	padding: 3px;
+	border: 2px solid;
+	border-color: lightgray;
+	border-radius: 10px;
+	margin-bottom: 3rem;
+	margin-left: 0.75rem;
+}
 input#email.input {
 	width: 15rem;
 	padding: 3px;
@@ -106,12 +118,9 @@ input#email.input {
 	border-color: lightgray;
 	border-radius: 10px;
 	height: 3.5rem;
+	margin-bottom: 3rem;
+	margin-left: 0.75rem;
 }
-.fcomment.label.label.label-next {
-	margin-top: 1rem;
-	margin-bottom: 2rem;
-}
-
 .fcomment.label.label.label-next {
 	margin-top: 1rem;
 	margin-bottom: 2rem;
@@ -128,7 +137,7 @@ input#email.input {
 	margin-left: 0.75rem;
 }
 .label.label.label-email {
-	margin-top: 1rem;
+	margin-top: 2.5rem;
 	margin-bottom: 1rem;
 	margin-left: 0.75rem;
 }
@@ -139,22 +148,33 @@ input#email.input {
 	margin-left: 0.75rem;
 }
 .label.label.label-comment {
+	margin-top: 1rem;
+}
+.label.label.label-gender {
+	margin-top: 1rem;
+}
+.label.label.label-dob {
+	border-right: 2rem;
 	margin-bottom: 1rem;
 	margin-top: 1rem;
-	margin-left: 0.75rem;
 }
 
 select#gender {
 	display: flex;
-	width: 100%;
+	width: 15rem;
 	border: 2px solid;
 	border-color: #e9ecef;
 	border-radius: 10px;
-	margin-top: 1rem;
 	height: 3.5rem;
-	margin-right: -1rem;
+	margin-top: 3rem;
+	margin-left: -6rem;
+	padding-left: 0.75rem;
 }
 
+#gender { 
+	font-size: 1.5rem;
+	color: gray;
+}
 .label.label.label-fname {
 	color: black;
 }
@@ -190,16 +210,9 @@ a.collapsed {
 	height: 3rem;
 	border-radius: 8px;
 	margin-top: -3.2rem;
+	margin-right: 1rem;
 }
 
-input#date.input {
-	width: 3em;
-	height: 2.5em;
-	padding: 3px;
-	border: 2px solid;
-	border-color: lightgray;
-	border-radius: 10px;
-}
 .names {
 	display: flex;
 	flex-direction: row;
@@ -207,22 +220,46 @@ input#date.input {
 	height: 4rem;
 	padding-top: none;
 }
-.email {
-	display: flex;
-	flex-direction: column;
-	margin: 1rem;
-	
-}
 
 @media only screen and (max-width: 600px) {
   input#fname.input.input-fname {
     width: 100%;
+		margin-left: 0.25rem;
 	}
 	input#sname.input.input-sname {
     width: 100%;
 	}
 	input#email.input {
-		width: 100%;
+		width: 60%;
+		margin-left: -0.75rem;
+	}
+	input#telephone.input.input-tel {
+		width: 50%;
+	}
+	.label.label.label-tel {
+		margin-left: -0.50rem;
+	}
+	select#gender {
+		width: 7.5rem;
+		margin-left: -6rem;
+	}
+	.label.label.label-gender {
+		margin-left: -0.75rem;
+	}
+	.label.label.label-fname {
+		margin-left: -0.75rem;
+	}
+	.label.label.label-sname {
+		margin-left: -0.75rem;
+	}
+	.label.label.label-email {
+		margin-left: -1.5rem;
+	}
+	input#date.input {
+		width: 20%;
+	}
+	.label.label.label-next {
+		width: 30%;
 	}
 }
 

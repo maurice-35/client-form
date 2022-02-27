@@ -3,8 +3,6 @@ import axios from 'axios'
 
 
 
-
-
 const App = () => {
   const [userInfo, setUserInfo] = useState({
 
@@ -81,7 +79,7 @@ const App = () => {
               <div id="collapse2" className="panel-collapse collapse">
                 <div className="panel-body"><div className="details">
                   <div className="names">
-                    <div className="fname">
+                    <div className="tel">
                       <label className="label label-tel" for="tel">Telephone Number</label>
                       <input className="input input-tel" type="text" id="telephone" name="tel"
                         value={userInfo.telephone}
