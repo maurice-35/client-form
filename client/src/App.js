@@ -5,8 +5,24 @@ import UserForm from './component/UserForm'
 
 
 const App = () => {
-  const [userInfo, setUserInfo] = useState([])
-
+  const [userInfo, setUserInfo] = useState({
+    firstName: '',
+    surname: '',
+    email: '',
+    telephone: '',
+    gender: '',
+    dateOfBirth: '',
+    comment: '',
+  })
+  const [errors, setErrors] = useState({
+    firstName: '',
+    surname: '',
+    email: '',
+    telephone: '',
+    gender: '',
+    dateOfBirth: '',
+    comment: '',
+  })
 
   useEffect(() => {
     console.log('USE')
@@ -14,7 +30,6 @@ const App = () => {
       console.log('Try')
       try {
         const { data } = await axios.get('/api/users')
-        setUserInfo(data)
         console.log('DATA', data)
       } catch (err) {
         console.log(err)
@@ -23,9 +38,23 @@ const App = () => {
     getData()
   }, [])
 
+  const handleChange = (name, value) => {
+    
+    const newFormData = {...userInfo, [name]: value }
+    setUserInfo(newFormData)
+    console.log('Event', name, value)
+    console.log('NEW', newFormData)
+  }
+
 
   return (
-    <UserForm />
+    <>
+      <UserForm 
+        handle={handleChange}
+        errors={errors}
+        buttonText="button"
+      />
+    </>
   )
 }
 

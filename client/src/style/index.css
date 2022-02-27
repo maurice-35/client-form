@@ -69,6 +69,7 @@ input#fname.input.input-fname {
 	margin-top: -0.75rem;
 	margin-bottom: 2rem;
 	margin-left: 0.75rem;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 input#sname.input.input-sname {
 	width: 15rem;
@@ -77,6 +78,7 @@ input#sname.input.input-sname {
 	border-radius: 10px;
 	height: 3.5rem;
 	margin-top: -0.75rem;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 input#telephone.input.input-tel {
@@ -89,6 +91,7 @@ input#telephone.input.input-tel {
 	margin-top: -0.75rem;
 	margin-bottom: 2rem;
 	margin-left: 0.75rem;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 input#fcomment.comment-comment {
@@ -100,6 +103,7 @@ input#fcomment.comment-comment {
 	border-radius: 10px;
 	margin-top: -1rem;
 	margin-left: 0.75rem;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 input#date.input {
 	width: 4rem;
@@ -110,6 +114,7 @@ input#date.input {
 	border-radius: 10px;
 	margin-bottom: 3rem;
 	margin-left: 0.75rem;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 input#email.input {
 	width: 15rem;
@@ -120,10 +125,12 @@ input#email.input {
 	height: 3.5rem;
 	margin-bottom: 3rem;
 	margin-left: 0.75rem;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 .fcomment.label.label.label-next {
 	margin-top: 1rem;
 	margin-bottom: 2rem;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 .label.label.label-fname {
@@ -169,6 +176,7 @@ select#gender {
 	margin-top: 3rem;
 	margin-left: -6rem;
 	padding-left: 0.75rem;
+	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 #gender { 
