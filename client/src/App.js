@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import UserForm from './component/UserForm'
+import { toast } from 'react-toastify'
 
 
 
@@ -52,8 +53,10 @@ const App = () => {
         '/api/users',
         userInfo,
       )
+      toast.success(' Succesfully registration! 👍🏾')
     } catch (err) {
       setErrors(err.response.data.errors)
+      toast.warning('Oops something went wrong, please check your details and try again')
     }
   }
 

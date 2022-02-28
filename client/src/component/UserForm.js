@@ -8,7 +8,7 @@ const UserForm = ({
   handleSubmit,
   Next = 'Next',
 }) => {
-
+  console.log('Submitted')
   const [date, setDate] = useState({
     day: false,
     month: false,
