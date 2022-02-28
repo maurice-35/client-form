@@ -76,8 +76,10 @@ The first day and part of the second day was focused on the backend. I worked on
 
 # Users'requests in insomnia
 
+![Screenshot 2022-02-28 at 15 05 36](https://user-images.githubusercontent.com/84001897/156020551-592c8fd9-e613-48f9-ab65-2ec055274e7b.png)
 
 # Frontend post request
+![Screenshot 2022-02-28 at 16 26 33](https://user-images.githubusercontent.com/84001897/156020607-1c3de871-9cc2-43ff-995c-e638a5f7ed5f.png)
 
 
 #  Wins
