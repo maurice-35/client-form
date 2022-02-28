@@ -31,7 +31,7 @@ const UserForm = ({
 
   return (
     <section>
-      <div className="container"><br />
+      <div className="container">
         <form
           className="column"
           onSubmit={handleSubmit}
