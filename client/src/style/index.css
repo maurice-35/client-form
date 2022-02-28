@@ -165,6 +165,39 @@ input#email.input {
 	margin-bottom: 1rem;
 	margin-top: 1rem;
 }
+.label.label.label-next {
+	display: flex;
+	float: right;
+	float: bottom;
+	justify-content: center;
+	align-items: center;
+	background-color: #6f42c5;
+	color: #fff;
+	padding: 3px;
+	width: 10rem;
+	height: 3rem;
+	border-radius: 8px;
+	margin-top: -3.2rem;
+	margin-right: 1rem;
+	border-style: none;
+}
+.label.label.label-next.collapsed {
+	display: flex;
+	/* float: right; */
+	float: bottom;
+	justify-content: center;
+	align-items: center;
+	background-color: #6f42c5;
+	color: #fff;
+	padding: 3px;
+	width: 10rem;
+	height: 3rem;
+	border-radius: 8px;
+	margin-top: -3.2rem;
+	margin-right: 1rem;
+	border-style: none;
+	margin-top: 5rem;
+}
 
 select#gender {
 	display: flex;
@@ -204,22 +237,6 @@ label.label.label-dob {
 
 a.collapsed {
 	color: #fff;
-}
-
-.label.label.label-next {
-	display: flex;
-	float: right;
-	justify-content: center;
-	align-items: center;
-	background-color: #6f42c5;
-	color: #fff;
-	padding: 3px;
-	width: 10rem;
-	height: 3rem;
-	border-radius: 8px;
-	margin-top: -3.2rem;
-	margin-right: 1rem;
-	border-style: none;
 }
 
 .names {

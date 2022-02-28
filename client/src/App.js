@@ -63,7 +63,7 @@ const App = () => {
         handleSubmit={handleSubmit}
         handle={handleChange}
         errors={errors}
-        buttonText="button"
+        Next="Next"
       />
     </>
   )

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Button } from 'react-bootstrap'
 
 
 
@@ -7,7 +8,6 @@ const UserForm = ({
   handleSubmit,
   Next = 'Next',
 }) => {
-  // console.log('Submiited')
 
   const [date, setDate] = useState({
     day: false,
@@ -139,7 +139,7 @@ const UserForm = ({
                         />
                       </div>
                       <div className="next">
-                        <button className="label label-next" for="next">{Next} {'>'} </button>
+                        <Button type="submit" className="label label-next" for="next" onClick={handleSubmit}>{Next} {'>'} </Button>
                       </div>
                     </div>
                   </div>
