@@ -24,8 +24,8 @@ const App = () => {
     comment: '',
   })
 
+
   useEffect(() => {
-    console.log('USE')
     const getData = async () => {
       console.log('Try')
       try {
@@ -39,17 +39,28 @@ const App = () => {
   }, [])
 
   const handleChange = (name, value) => {
-    
     const newFormData = {...userInfo, [name]: value }
     setUserInfo(newFormData)
     console.log('Event', name, value)
     console.log('NEW', newFormData)
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      await axios.post(
+        '/api/users',
+        userInfo,
+      )
+    } catch (err) {
+      setErrors(err.response.data.errors)
+    }
+  }
 
   return (
     <>
       <UserForm 
+        handleSubmit={handleSubmit}
         handle={handleChange}
         errors={errors}
         buttonText="button"

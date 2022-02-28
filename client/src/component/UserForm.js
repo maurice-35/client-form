@@ -7,26 +7,27 @@ const UserForm = ({
   handleSubmit,
   Next = 'Next',
 }) => {
+  // console.log('Submiited')
 
   const [date, setDate] = useState({
     day: false,
     month: false,
     year: false
-  }) 
+  })
 
   const handleDate = (event) => {
-    const newFormData = {...date, [event.target.name] : event.target.value}
+    const newFormData = { ...date, [event.target.name]: event.target.value }
     setDate(newFormData)
     console.log('DATA', newFormData)
-    
   }
 
-useEffect(() => {
-  if(date.day && date.month && date.year) {
-    console.log('Hello')
-    handle('dateOfBirth', `${date.day}/${date.month}/${date.year}`)
-  }
-}, [date.day, date.month, date.year])
+  useEffect(() => {
+    if (date.day && date.month && date.year) {
+      console.log('Hello')
+      handle('dateOfBirth', `${date.day}/${date.month}/${date.year}`)
+    }
+  }, [date.day, date.month, date.year])
+
 
   return (
     <section>
@@ -44,7 +45,7 @@ useEffect(() => {
                 </h4>
               </div>
               <div id="collapse1" className="panel-collapse collapse in">
-                <div class="panel-body"><div className="details">
+                <div className="panel-body"><div className="details">
                   <div className="names">
                     <div className="fname">
                       <label className="label label-fname" for="fname">First Name</label>
@@ -66,7 +67,7 @@ useEffect(() => {
                     />
                   </div>
                   <div className="next">
-                    <button className="label label-next" for="next">{Next} {'>'} </button>
+                    <label className="label label-next" for="next">Next {'>'}</label>
                   </div>
                 </div>
                 </div>
@@ -105,16 +106,16 @@ useEffect(() => {
                       <label className="label label-dob" for="date of birth"
                       >Date of birth</label>
                       <div className="date">
-                        <input onChange={handleDate} 
+                        <input onChange={handleDate}
                           className="input" type="text" id="date" name="day" />
-                        <input onChange={handleDate} 
-                        className="input" type="text" id="date" name="month" />
-                        <input onChange={handleDate} 
-                        className="input" type="text" id="date" name="year" />
+                        <input onChange={handleDate}
+                          className="input" type="text" id="date" name="month" />
+                        <input onChange={handleDate}
+                          className="input" type="text" id="date" name="year" />
                       </div>
                     </div>
                     <div className="next">
-                      <button className="label label-next" for="next">{Next} {'>'} </button>
+                      <label className="label label-next" for="next">Next {'>'} </label>
                     </div>
                   </div>
                 </div>
@@ -134,7 +135,7 @@ useEffect(() => {
                       <div className="fcomment">
                         <label className="label label-comment" for="comment">Comments</label>
                         <input onChange={(event) => handle(event.target.name, event.target.value)}
-                        className="comment-comment" type="textarea" id="fcomment" name="comment"
+                          className="comment-comment" type="textarea" id="fcomment" name="comment"
                         />
                       </div>
                       <div className="next">
