@@ -61,7 +61,7 @@ const App = () => {
       console.log(err.text)
         Swal.fire({
           icon: 'error',
-          title: 'Ooops, something went wrong',
+          title: 'Oops, something went wrong, please check your details and try again.',
           text: err.text,
         })
     }
