@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import UserForm from './component/UserForm'
-import { toast } from 'react-toastify'
+import Swal from 'sweetalert2'
 
 
 
@@ -51,12 +51,19 @@ const App = () => {
     try {
       await axios.post(
         '/api/users',
-        userInfo,
-      )
-      toast.success(' Succesfully registration! 👍🏾')
+        userInfo)
+        Swal.fire({
+          icon: 'success',
+          title: 'Form Submitted Successfully',
+        })
     } catch (err) {
       setErrors(err.response.data.errors)
-      toast.warning('Oops something went wrong, please check your details and try again')
+      console.log(err.text)
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: err.text,
+        })
     }
   }
 
