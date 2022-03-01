@@ -42,7 +42,7 @@ A simple full-stack applicaation built to send user's info to the database.
 - Install `Yarn` and add dependencies in the root of the project `yarn add express`, `yarn add mongoose`, `yarn add bootstrap`.
 - Install dependencies in the client folder `cd client && yarn`.
 
-To run the app, make sur you're using node version 16 or npm v8.
+To run the app, make sure you're using node version 16 or npm v8.
 - `cd Backend`, `yarn seeds`, `yarn serve`.
 - `cd client`, `yarn start`.
 You can do the above in separate terminals.
