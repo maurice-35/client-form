@@ -37,14 +37,19 @@ A simple full-stack applicaation built to send user's info to the database.
 #  Install
 - Set-up the development folder on GitHub.
 - Create branches of the development folder.
-- Install MongoDB `brew tap mongodb/brew`
+- Install MongoDB `brew tap mongodb/brew`.
+- Start the database `mongod --dbpath ~/data/db`.
 - Install `Yarn` and add dependencies in the root of the project `yarn add express`, `yarn add mongoose`, `yarn add bootstrap`.
 - Install dependencies in the client folder `cd client && yarn`.
-- Start the database `mongod --dbpath ~/data/db`.
+
+To run the app, make sur you're using node version 16 or npm v8.
+- `cd Backend`, `yarn seeds`, `yarn serve`.
+- `cd client`, `yarn start`.
+You can do the above in separate terminals.
 
 # Approach
 
-The first day and part of the second day was focused on the backend. I worked on the backend creating models, controllers and routes.
+The first day and part of the second day was focused on the backend. I worked on the backend creating models, controllers and routes. Completed the rest of the frontend and styling in the other two and a half days.
 
 ## Users Schema
 
