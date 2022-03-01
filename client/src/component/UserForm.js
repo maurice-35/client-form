@@ -66,8 +66,9 @@ const UserForm = ({
                       className="input" type="text" id="email" name="email"
                     />
                   </div>
+
                   <div className="next">
-                    <label className="label label-next" for="next">Next {'>'}</label>
+                    <label className="label label-next" for="next" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Next {'>'}</label>
                   </div>
                 </div>
                 </div>
@@ -115,7 +116,7 @@ const UserForm = ({
                       </div>
                     </div>
                     <div className="next">
-                      <label className="label label-next" for="next">Next {'>'} </label>
+                      <label className="label label-next" for="next" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Next {'>'} </label>
                     </div>
                   </div>
                 </div>
