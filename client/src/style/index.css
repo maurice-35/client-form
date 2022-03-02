@@ -6,6 +6,7 @@
 
 body {
 position: relative;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -22,25 +23,30 @@ position: relative;
 }
 
 div.content {
+
+	flex-direction: column;
+	justify-items: last baseline;
+	align-items: flex-end;
 	position: relative;
 	width: 60%;
 	margin-top: 5rem;
-	border: 0.5rem solid #fff;
+	margin-bottom: -5rem;
 	padding-top: 1.5rem;
+	padding-bottom: -3rem;
 	border-radius: 1rem;
 	background-color: #fff;
 	margin-left: 20%;
 }
 
 form.column {
-	margin-top: 20%;
-	margin-bottom: 30%;
+	margin-top: 17%;
 }
 
 div.panel-heading {
 	display: flex;
 	align-items: center;
 	width: 100%;
+	height: 5rem;
 	border-radius: 0.5rem;
 	background-color:#f7bc09;
 	margin-top: -1.5rem;
@@ -50,20 +56,23 @@ div.panel-heading {
 div.panel-body {
 	background-color: #e9ecef;
 	padding: 0rem;
+	border-radius: 1rem;
 }
 
-div.details {
+div.details1, div.details2, div.details3 {
 	background-color: #e9ecef;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	border-radius: 1.25rem;
-	padding-bottom: 1rem;
-	margin-bottom: -2rem;
+}
+
+div.details3 {
+	padding-bottom: 0.5rem;
+	border-radius: 1rem;
 }
 input#fname.input.input-fname {
 	display: flex;
-	width: 15rem;
+	width: 16rem;
 	border: 2px solid;
 	border-color: lightgray;
 	border-radius: 10px;
@@ -74,18 +83,19 @@ input#fname.input.input-fname {
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 input#sname.input.input-sname {
-	width: 15rem;
+	width: 16rem;
 	border: 2px solid;
 	border-color: lightgray;
 	border-radius: 10px;
 	height: 3.5rem;
 	margin-top: -0.75rem;
+	margin-left: 1rem;
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 input#telephone.input.input-tel {
 	display: flex;
-	width: 15rem;
+	width: 16rem;
 	border: 2px solid;
 	border-color: lightgray;
 	border-radius: 10px;
@@ -102,11 +112,14 @@ input#fcomment.comment-comment {
 	height: 12rem;
 	border: 2px solid;
 	border-color: lightgray;
-	border-radius: 10px;
 	margin-top: -1rem;
 	margin-left: 0.75rem;
-	margin-bottom: 2rem;;
+	margin-bottom: 2rem;
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.fcomment {
+	padding-bottom: 0.5rem;
 }
 input#date.input {
 	width: 4rem;
@@ -119,7 +132,7 @@ input#date.input {
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 input#email.input {
-	width: 15rem;
+	width: 16rem;
 	padding: 3px;
 	border: 2px solid;
 	border-color: lightgray;
@@ -137,12 +150,25 @@ input#email.input {
 div.fcomment {
 	margin-bottom: -20px;
 }
-div#accordion.panel-group {
-	margin-bottom: 2rem;
-}
 
 div#accordion.panel-group {
-	padding-bottom: -20px;
+	border: 0.5rem solid #fff;
+	background-color: #e9ecef;
+	border-radius: 1rem;
+}
+
+.panel-group {
+	margin-bottom: 10px;
+}
+
+div#collapse1.panel-collapse.collapse.in {
+	border-radius: 1rem;
+}
+div#collapse2.panel-collapse.collapse.in {
+	border-radius: 1rem;
+}
+div#collapse3.panel-collapse.collapse.in {
+	border-radius: 1rem;
 }
 .label.label.label-fname {
 	margin-top: 1rem;
@@ -202,7 +228,7 @@ select#gender {
 	border-radius: 10px;
 	height: 3.5rem;
 	margin-top: 3rem;
-	margin-left: -6rem;
+	margin-left: -5rem;
 	padding-left: 0.75rem;
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
@@ -244,18 +270,19 @@ a.collapsed {
 
 @media only screen and (max-width: 770px) {
   input#fname.input.input-fname {
-    width: 100%;
+    width: 90%;
 		margin-left: 0.25rem;
 	}
 	input#sname.input.input-sname {
-    width: 100%;
+    width: 90%;
+		margin-left: 0.25rem;
 	}
 	input#email.input {
-		width: 60%;
+		width: 50%;
 		margin-left: 0.25rem;
 	}
 	input#telephone.input.input-tel {
-		width: 50%;
+		width: 70%;
 		margin-left: 0.25rem;
 	}
 	.label.label.label-tel {
@@ -278,7 +305,7 @@ a.collapsed {
 		margin-left: -0.5rem;
 	}
 	input#date.input {
-		width: 15%;
+		width: 16%;
 	}
 	.label.label.label-next {
 		width: 30%;

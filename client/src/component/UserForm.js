@@ -45,7 +45,8 @@ const UserForm = ({
                 </h4>
               </div>
               <div id="collapse1" className="panel-collapse collapse in">
-                <div className="panel-body"><div className="details">
+                <div className="panel-body">
+                  <div className="details1">
                   <div className="names">
                     <div className="fname">
                       <label className="label label-fname" for="fname">First Name</label>
@@ -83,7 +84,7 @@ const UserForm = ({
               </div>
               <div id="collapse2" className="panel-collapse collapse">
                 <div className="panel-body">
-                  <div className="details">
+                  <div className="details2">
                     <div className="names">
                       <div className="tel">
                         <label className="label label-tel" for="tel">Telephone Number</label>
@@ -131,7 +132,7 @@ const UserForm = ({
               </div>
               <div id="collapse3" className="panel-collapse collapse">
                 <div className="panel-body">
-                  <div className="details">
+                  <div className="details3">
                     <div className="comments">
                       <div className="fcomment">
                         <label className="label label-comment" for="comment">Comments</label>

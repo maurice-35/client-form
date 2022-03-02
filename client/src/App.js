@@ -54,14 +54,14 @@ const App = () => {
         userInfo)
         Swal.fire({
           icon: 'success',
-          title: 'Form Submitted Successfully',
+          title: 'Form Submitted Successfully 👍🏾',
         })
     } catch (err) {
       setErrors(err.response.data.errors)
       console.log(err.text)
         Swal.fire({
           icon: 'error',
-          title: 'Oops, something went wrong, please check your details and try again.',
+          title: 'Oops, something went wrong 🤔, please check your details and try again.',
           text: err.text,
         })
     }
