@@ -217,6 +217,10 @@ form.column {
 	cursor: pointer;
 }
 
+.label.label-next:hover {
+  color: #f7bc09;
+}
+
 #gender {
 	display: flex;
 	width: 15rem;
