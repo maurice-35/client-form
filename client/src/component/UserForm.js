@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap'
 
@@ -49,27 +50,27 @@ const UserForm = ({
                   <div className="details1">
                   <div className="names">
                     <div className="fname">
-                      <label className="label label-fname" for="fname">First Name</label>
+                      <label className="label label-fname" htmlFor="fname">First Name</label>
                       <input onChange={(event) => handle(event.target.name, event.target.value)}
                         className="input input-fname" type="text" id="fname" name="firstName"
                       />
                     </div>
                     <div>
-                      <label className="label label-sname" for="sname">Surname</label>
+                      <label className="label label-sname" htmlFor="sname">Surname</label>
                       <input onChange={(event) => handle(event.target.name, event.target.value)}
                         className="input input-sname" type="text" id="sname" name="surname"
                       />
                     </div>
                   </div>
-                  <div class="email">
-                    <label className="label label-email" for="email">Email Address:</label>
+                  <div className="email">
+                    <label className="label label-email" htmlFor="email">Email Address:</label>
                     <input onChange={(event) => handle(event.target.name, event.target.value)}
                       className="input" type="text" id="email" name="email"
                     />
                   </div>
 
                   <div className="next">
-                    <label className="label label-next" for="next" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Next {'>'}</label>
+                    <label className="label label-next" htmlFor="next" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Next {'>'}</label>
                   </div>
                 </div>
                 </div>
@@ -87,13 +88,13 @@ const UserForm = ({
                   <div className="details2">
                     <div className="names">
                       <div className="tel">
-                        <label className="label label-tel" for="tel">Telephone Number</label>
+                        <label className="label label-tel" htmlFor="tel">Telephone Number</label>
                         <input onChange={(event) => handle(event.target.name, event.target.value)}
                           className="input input-tel" type="text" id="telephone" name="telephone"
                         />
                       </div>
                       <div className="names">
-                        <label className="label label-gender" for="gender">Gender</label>
+                        <label className="label label-gender" htmlFor="gender">Gender</label>
                         <select name="gender" id="gender"
                           onChange={(event) => handle(event.target.name, event.target.value)}
                         >
@@ -105,7 +106,7 @@ const UserForm = ({
                       </div>
                     </div>
                     <div className="date">
-                      <label className="label label-dob" for="date of birth"
+                      <label className="label label-dob" htmlFor="date of birth"
                       >Date of birth</label>
                       <div className="date">
                         <input onChange={handleDate}
@@ -117,7 +118,7 @@ const UserForm = ({
                       </div>
                     </div>
                     <div className="next">
-                      <label className="label label-next" for="next" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Next {'>'} </label>
+                      <label className="label label-next" htmlFor="next" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Next {'>'} </label>
                     </div>
                   </div>
                 </div>
@@ -135,13 +136,13 @@ const UserForm = ({
                   <div className="details3">
                     <div className="comments">
                       <div className="fcomment">
-                        <label className="label label-comment" for="comment">Comments</label>
+                        <label className="label label-comment" htmlFor="comment">Comments</label>
                         <input onChange={(event) => handle(event.target.name, event.target.value)}
                           className="comment-comment" type="textarea" id="fcomment" name="comment"
                         />
                       </div>
                       <div className="next">
-                        <Button type="submit" className="label label-next" for="next" onClick={handleSubmit}>{Next} {'>'} </Button>
+                        <Button type="submit" className="label label-next" htmlFor="next" onClick={handleSubmit}>{Next} {'>'} </Button>
                       </div>
                     </div>
                   </div>

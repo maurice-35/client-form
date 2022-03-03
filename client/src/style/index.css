@@ -1,12 +1,12 @@
 *{
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
 }
 
 body {
 position: relative;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+cursor: pointer;
 }
 
 .container {
@@ -22,7 +22,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 1.75rem;
 }
 
-div.content {
+.content {
 
 	flex-direction: column;
 	justify-items: last baseline;
@@ -42,7 +42,7 @@ form.column {
 	margin-top: 17%;
 }
 
-div.panel-heading {
+.panel-heading {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -50,27 +50,26 @@ div.panel-heading {
 	border-radius: 0.5rem;
 	background-color:#f7bc09;
 	margin-top: -1.5rem;
-	padding-bottom: none;
 }
 
-div.panel-body {
+.panel-body {
 	background-color: #e9ecef;
 	padding: 0rem;
 	border-radius: 1rem;
 }
 
-div.details1, div.details2, div.details3 {
+.details1, .details2, .details3 {
 	background-color: #e9ecef;
 	width: 100%;
 	padding: 0;
 	margin: 0;
 }
 
-div.details3 {
+.details3 {
 	padding-bottom: 0.5rem;
 	border-radius: 1rem;
 }
-input#fname.input.input-fname {
+#fname.input.input-fname {
 	display: flex;
 	width: 16rem;
 	border: 2px solid;
@@ -82,7 +81,7 @@ input#fname.input.input-fname {
 	margin-left: 0.75rem;
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
-input#sname.input.input-sname {
+#sname.input.input-sname {
 	width: 16rem;
 	border: 2px solid;
 	border-color: lightgray;
@@ -93,7 +92,7 @@ input#sname.input.input-sname {
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-input#telephone.input.input-tel {
+#telephone.input.input-tel {
 	display: flex;
 	width: 16rem;
 	border: 2px solid;
@@ -106,7 +105,7 @@ input#telephone.input.input-tel {
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-input#fcomment.comment-comment {
+#fcomment.comment-comment {
 	display: flex;
 	width: 60%;
 	height: 12rem;
@@ -118,10 +117,11 @@ input#fcomment.comment-comment {
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-div.fcomment {
+.fcomment {
 	padding-bottom: 0.5rem;
+	margin-bottom: -20px;
 }
-input#date.input {
+#date.input {
 	width: 4rem;
 	height: 2em;
 	padding: 3px;
@@ -131,7 +131,7 @@ input#date.input {
 	margin-left: 0.75rem;
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
-input#email.input {
+#email.input {
 	width: 16rem;
 	padding: 3px;
 	border: 2px solid;
@@ -147,11 +147,7 @@ input#email.input {
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-div.fcomment {
-	margin-bottom: -20px;
-}
-
-div#accordion.panel-group {
+#accordion.panel-group {
 	border: 0.5rem solid #fff;
 	background-color: #e9ecef;
 	border-radius: 1rem;
@@ -161,49 +157,49 @@ div#accordion.panel-group {
 	margin-bottom: 10px;
 }
 
-div#collapse1.panel-collapse.collapse.in {
+#collapse1.panel-collapse.collapse.in {
 	border-radius: 1rem;
 }
-div#collapse2.panel-collapse.collapse.in {
+#collapse2.panel-collapse.collapse.in {
 	border-radius: 1rem;
 }
-div#collapse3.panel-collapse.collapse.in {
+#collapse3.panel-collapse.collapse.in {
 	border-radius: 1rem;
 }
-.label.label.label-fname {
+.label.label-fname {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	margin-left: 0.75rem;
 }
-.label.label.label-sname {
+.label.label-sname {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	margin-left: 0.75rem;
 }
-.label.label.label-email {
+.label.label-email {
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 	margin-left: 0.75rem;
 }
 
-.label.label.label-tel {
+.label.label-tel {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	margin-left: 0.75rem;
 }
-.label.label.label-comment {
+.label.label-comment {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
-.label.label.label-gender {
+.label.label-gender {
 	margin-top: 1rem;
 }
-.label.label.label-dob {
+.label.label-dob {
 	border-right: 2rem;
 	margin-bottom: 1rem;
 	margin-top: 1rem;
 }
-.label.label.label-next {
+.label.label-next {
 	display: flex;
 	float: right;
 	float: bottom;
@@ -218,14 +214,17 @@ div#collapse3.panel-collapse.collapse.in {
 	margin-top: -3.2rem;
 	margin-right: 1rem;
 	border-style: none;
+	cursor: pointer;
 }
 
-select#gender {
+#gender {
 	display: flex;
 	width: 15rem;
 	border: 2px solid;
 	border-color: lightgray;
 	border-radius: 10px;
+	font-size: 1.5rem;
+	color: gray;
 	height: 3.5rem;
 	margin-top: 3rem;
 	margin-left: -5rem;
@@ -233,14 +232,10 @@ select#gender {
 	box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-#gender { 
-	font-size: 1.5rem;
-	color: gray;
-}
-.label.label.label-fname {
+.label.label-fname {
 	color: black;
 }
-.label.label.label-sname {
+.label.label-sname {
 	color: black;
 }
 label.label {
@@ -248,11 +243,11 @@ label.label {
 	color: black;
 }
 
-.label.label.label-gender {
+.label.label-gender {
 	color: black;
 }
 
-label.label.label-dob {
+.label.label-dob {
 	padding-top: 2.5rem;
 }
 
@@ -269,45 +264,48 @@ a.collapsed {
 }
 
 @media only screen and (max-width: 770px) {
-  input#fname.input.input-fname {
+	.panel-heading {
+		height: 4rem;
+	}
+  #fname.input.input-fname {
     width: 90%;
 		margin-left: 0.25rem;
 	}
-	input#sname.input.input-sname {
+	#sname.input.input-sname {
     width: 90%;
 		margin-left: 0.25rem;
 	}
-	input#email.input {
+	#email.input {
 		width: 50%;
 		margin-left: 0.25rem;
 	}
-	input#telephone.input.input-tel {
+	#telephone.input.input-tel {
 		width: 70%;
 		margin-left: 0.25rem;
 	}
-	.label.label.label-tel {
+	.label.label-tel {
 		margin-left: -0.50rem;
 	}
-	select#gender {
+	#gender {
 		width: 7.5rem;
 		margin-left: -7rem;
 	}
-	.label.label.label-gender {
+	.label.label-gender {
 		margin-left: -0.75rem;
 	}
-	.label.label.label-fname {
+	.label.label-fname {
 		margin-left: -0.5rem;
 	}
-	.label.label.label-sname {
+	.label.label-sname {
 		margin-left: -0.75rem;
 	}
-	.label.label.label-email {
+	.label.label-email {
 		margin-left: -0.5rem;
 	}
-	input#date.input {
+	#date.input {
 		width: 16%;
 	}
-	.label.label.label-next {
+	.label.label-next {
 		width: 30%;
 	}
 }
