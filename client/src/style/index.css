@@ -1,7 +1,3 @@
-*{
-	box-sizing: border-box;
-	margin: 0;
-}
 
 body {
 position: relative;
@@ -9,16 +5,20 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 cursor: pointer;
 }
 
+section {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	background-color: rgba(170, 193, 250, 0.467);
+	margin: 7% 1% 7% 1%;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
-	flex-grow: 1;
-	height: 100vh;
-	width: 100vw;
-	background-color: rgba(170, 193, 250, 0.467);
-	margin-top: 8rem;
-	margin-bottom: 8rem;
+	height: 100%;
+	width: 100%;
 	font-size: 1.75rem;
 }
 
@@ -28,14 +28,13 @@ cursor: pointer;
 	justify-items: last baseline;
 	align-items: flex-end;
 	position: relative;
-	width: 60%;
-	margin-top: 5rem;
-	margin-bottom: -5rem;
+	width: 95%;
+	margin-top: 10%;
+	margin-bottom: 30%;
 	padding-top: 1.5rem;
-	padding-bottom: -3rem;
 	border-radius: 1rem;
 	background-color: #fff;
-	margin-left: 20%;
+	margin-left: 3%;
 }
 
 form.column {
@@ -46,7 +45,7 @@ form.column {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	height: 5rem;
+	height: 4.5rem;
 	border-radius: 0.5rem;
 	background-color:#f7bc09;
 	margin-top: -1.5rem;
@@ -69,6 +68,7 @@ form.column {
 	padding-bottom: 0.5rem;
 	border-radius: 1rem;
 }
+
 #fname.input.input-fname {
 	display: flex;
 	width: 16rem;
@@ -178,7 +178,7 @@ form.column {
 }
 .label.label-email {
 	margin-top: 3rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	margin-left: 0.75rem;
 }
 
@@ -196,7 +196,7 @@ form.column {
 }
 .label.label-dob {
 	border-right: 2rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	margin-top: 1rem;
 }
 .label.label-next {
@@ -268,49 +268,23 @@ a.collapsed {
 }
 
 @media only screen and (max-width: 770px) {
-	.panel-heading {
-		height: 4rem;
-	}
   #fname.input.input-fname {
     width: 90%;
-		margin-left: 0.25rem;
+		margin-left: 1rem;
 	}
 	#sname.input.input-sname {
     width: 90%;
 		margin-left: 0.25rem;
 	}
-	#email.input {
-		width: 50%;
-		margin-left: 0.25rem;
-	}
-	#telephone.input.input-tel {
-		width: 70%;
-		margin-left: 0.25rem;
-	}
-	.label.label-tel {
-		margin-left: -0.50rem;
-	}
 	#gender {
-		width: 7.5rem;
-		margin-left: -7rem;
+		width: 100%;
+		margin-left: -5rem;
 	}
 	.label.label-gender {
 		margin-left: -0.75rem;
 	}
-	.label.label-fname {
-		margin-left: -0.5rem;
-	}
 	.label.label-sname {
 		margin-left: -0.75rem;
-	}
-	.label.label-email {
-		margin-left: -0.5rem;
-	}
-	#date.input {
-		width: 16%;
-	}
-	.label.label-next {
-		width: 30%;
 	}
 }
 

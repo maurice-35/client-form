@@ -137,8 +137,8 @@ const UserForm = ({
                     <div className="comments">
                       <div className="fcomment">
                         <label className="label label-comment" htmlFor="comment">Comments</label>
-                        <input onChange={(event) => handle(event.target.name, event.target.value)}
-                          className="comment-comment" type="textarea" id="fcomment" name="comment"
+                        <textarea onChange={(event) => handle(event.target.name, event.target.value)}
+                          className="comment-comment"  id="fcomment" name="comment"
                         />
                       </div>
                       <div className="next">
