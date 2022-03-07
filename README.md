@@ -39,6 +39,7 @@ A simple full-stack applicaation built to send user's info to the database.
 - Create branches of the development folder.
 - Install MongoDB `brew tap mongodb/brew`.
 - Start the database `mongod --dbpath ~/data/db`.
+- Create frontend folder `npx create-react-app client`.
 - Install `Yarn` and add dependencies in the root of the project `yarn add express`, `yarn add mongoose`, `yarn add bootstrap`.
 - Install dependencies in the client folder `cd client && yarn`.
 
