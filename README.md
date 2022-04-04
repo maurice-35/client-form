@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Courier+new&color=%23808080&size=40&width=800&duration=6969&lines=✋🏾Hello!+Welcome+to+this-project!)]
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Courier+new&color=%23808080&size=40&width=800&duration=6969&lines=✋🏾Hello!+Welcome+to+this+full-stack+project!)]
 
 # Overview
 A simple full-stack applicaation built to send user's info to the database.
