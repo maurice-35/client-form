@@ -6,7 +6,6 @@ import { Button } from 'react-bootstrap'
 const UserForm = ({
   handle,
   handleSubmit,
-  reset,
   Next = 'Next',
 }) => {
   console.log('Submitted')
@@ -35,7 +34,6 @@ const UserForm = ({
         <form
           className="column"
           onSubmit={handleSubmit}
-          reset={reset}
         >
           <div className="content">
             <div className="panel-group" id="accordion">

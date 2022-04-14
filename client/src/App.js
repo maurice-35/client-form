@@ -66,9 +66,6 @@ const App = () => {
         text: err.text,
       })
     }
-    // e.target.reset()
-    reset(userInfo)
-    // setState({...resetForm})
   }
 
   return (
