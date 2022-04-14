@@ -5,7 +5,7 @@ A simple full-stack applicaation built to send user's info to the database.
 
 # Bref
 
-- Using TypeScript (Or any your language of choice)
+I used JavaScript to:
 - Build a React UI, using the hooks API
 - Build a Node API, using a framework like Express
 - Validate user input in the UI:
@@ -15,8 +15,7 @@ A simple full-stack applicaation built to send user's info to the database.
 - Form section headers should be clickable to expand/collapse the body
 - Save all form data into an SQLite database, using an ORM like Sequelize (or similar) 
 - Match the UI to the artwork files – as close to pixel perfect as you can
-- Detailed README.md file with commands on how to setup the app
-- Follow relevant OWASP best practices: https://en.wikipedia.org/wiki/OWASP
+
 
 #  Technologies
 ## Languages
@@ -97,4 +96,4 @@ This final output does not cover all  intentions and plan for the project. If po
 #  Contribution to the project
 I welcome any criticisms, corrections and contributions to this project.
 
-### © Finer Vision
+### © Maurice Kollewe

@@ -37,10 +37,11 @@ const App = () => {
       }
     }
     getData()
+    // reset(userInfo)
   }, [])
 
   const handleChange = (name, value) => {
-    const newFormData = {...userInfo, [name]: value }
+    const newFormData = { ...userInfo, [name]: value }
     setUserInfo(newFormData)
     console.log('Event', name, value)
     console.log('NEW', newFormData)
@@ -52,24 +53,27 @@ const App = () => {
       await axios.post(
         '/api/users',
         userInfo)
-        Swal.fire({
-          icon: 'success',
-          title: 'Form Submitted Successfully 👍🏾',
-        })
+      Swal.fire({
+        icon: 'success',
+        title: 'Form Submitted Successfully 👍🏾',
+      })
     } catch (err) {
       setErrors(err.response.data.errors)
       console.log(err.text)
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops, something went wrong 🤔, please check your details and try again.',
-          text: err.text,
-        })
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops, something went wrong 🤔, please check your details and try again.',
+        text: err.text,
+      })
     }
+    // e.target.reset()
+    reset(userInfo)
+    // setState({...resetForm})
   }
 
   return (
     <>
-      <UserForm 
+      <UserForm
         handleSubmit={handleSubmit}
         handle={handleChange}
         errors={errors}

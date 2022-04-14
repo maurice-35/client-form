@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap'
 
 
-
 const UserForm = ({
   handle,
   handleSubmit,
+  reset,
   Next = 'Next',
 }) => {
   console.log('Submitted')
@@ -29,13 +29,13 @@ const UserForm = ({
     }
   }, [date.day, date.month, date.year])
 
-
   return (
     <section>
       <div className="container">
         <form
           className="column"
           onSubmit={handleSubmit}
+          reset={reset}
         >
           <div className="content">
             <div className="panel-group" id="accordion">
