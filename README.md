@@ -1,4 +1,4 @@
-# test-finer-v
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Courier+new&color=%23808080&size=40&width=800&duration=6969&lines=👋🏽+Hello!+Welcome+to+this+project!)]
 
 # Overview
 A simple full-stack applicaation built to send user's info to the database.
@@ -38,6 +38,7 @@ I used JavaScript to:
 - Create branches of the development folder.
 - Install MongoDB `brew tap mongodb/brew`.
 - Start the database `mongod --dbpath ~/data/db`.
+- Create frontend folder `npx create-react-app client`.
 - Install `Yarn` and add dependencies in the root of the project `yarn add express`, `yarn add mongoose`, `yarn add bootstrap`.
 - Install dependencies in the client folder `cd client && yarn`.
 
