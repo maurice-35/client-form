@@ -1,11 +1,11 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Courier+new&color=%23808080&size=40&width=800&duration=6969&lines=👋🏽+Hello!+Welcome+to+this+project!)]
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Courier+new&color=%23808080&size=40&width=800&duration=6969&lines=👋🏽+Hello!+Welcome+to+this+project!)
 
 # Overview
 A simple full-stack applicaation built to send user's info to the database.
 
 # Bref
+Use a langauge of your choice (I used JavaScript) to:
 
-I used JavaScript to:
 - Build a React UI, using the hooks API
 - Build a Node API, using a framework like Express
 - Validate user input in the UI:
